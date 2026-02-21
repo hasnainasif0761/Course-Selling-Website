@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Course Details - EduLearn</title>
+    <link rel="stylesheet" href="./css/style.css">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+        integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body>
+    <nav class="navbar">
+        <div class="container">
+            <div class="nav-content">
+                <div class="logo">
+                    <i class="fas fa-graduation-cap"></i>
+                    <span>EduLearn</span>
+                </div>
+                <a href="index.html" class="back-link"><i class="fas fa-arrow-left"></i>Back to Courses</a>
+            </div>
+        </div>
+    </nav>
+    <div class="course-detail-container">
+        <div class="container">
+            <div class="course-details-grid" id="courseDetails">
+                <!-- Course Details Will be loading here -->
+            </div>
+
+            <div id="paymentModel" class="modal">
+                <div class="modal-content">
+                    <span class="close">&times;</span>
+                    <h2>Complete your Purchase</h2>
+                    <div class="payment-demo-notice">
+                        <i class="fas fa-info-circle"></i>
+                        <p>Demo Payment Method - Use any fake details</p>
+                    </div>
+                    <form action="" id="paymentforms" class="payment-form">
+                        <div class="course-summary" id="courseSummary">
+                            <!-- Course Summary will be display here -->
+                        </div>
+
+                        <h3>Payments Details</h3>
+
+                        <div class="form-group">
+                            <label for="cardNumber">Card Number</label>
+                            <input type="text" id="cardNumber" placeholder="4232 4232 4232 4232" maxlength="19">
+                        </div>
+                        <div class="form-rows">
+                            <div class="form-group">
+                                <label for="expiryDate">Expiry Date</label>
+                                <input type="text" id="expiryDate" placeholder="MM/YY">
+                            </div>
+                            <div class="form-group">
+                                <label for="">CVV</label>
+                                <input type="text" id="cvv" placeholder="123" maxlength="3">
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label for="">Cardholder Name</label>
+                            <input type="text" id="cardholderName" placeholder="Huzaifa">
+                        </div>
+                        <div class="form-group">
+                            <label>Email</label>
+                            <input type="text" id="email" placeholder="your@example.com">
+                        </div>
+
+                        <button type="submit" class="btn btn-primary btn btn-block">Pay Now</button>
+                        <p>This is a demo - no actuall payment will be processd</p>
+                    </form>
+                </div>
+            </div>
+
+            <div class="unlock-content" id="unlockContent" style="display: none;">
+                <!-- Course Content Display here  After Payment-->
+            </div>
+        </div>
+    </div>
+
+    <script src="./js/payment.js"></script>
+</body>
+
+</html>
