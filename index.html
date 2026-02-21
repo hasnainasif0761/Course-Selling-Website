@@ -1,11 +1,108 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Huzaifa Course's</title>
+    <link rel="stylesheet" href="./css/style.css">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+        integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
+
 <body>
-    
+    <nav class="navbar">
+        <div class="container">
+            <div class="nav-content">
+                <div class="logo">
+                    <i class="fas fa-graduation-cap"></i>
+                    <span>EduLearn</span>
+                </div>
+                <ul class="nav-links">
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#courses">Courses</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+                <div class="mobile-menu">
+                    <i class="fas fa-bars"></i>
+                </div>
+            </div>
+        </div>
+    </nav>
+    <section id="id" class="home">
+        <div class="container">
+            <div class="hero-content">
+                <h1 class="animate-pop-in">Learn From the best</h1>
+                <p class="animate-pop-in delay-1">Transform your career with expert-led courses</p>
+                <a href="#courses" class="btn btn-primary animate-pop-in delay-2">Explore Courses</a>
+            </div>
+            <div class="hero-image animate-slide-in">
+                <img src="./img/hero-img.avif" alt="">
+            </div>
+        </div>
+    </section>
+
+    <section class="courses" id="courses">
+        <div class="container">
+            <h2 class="section-title">Feature Courses</h2>
+            <div class="course-filter">
+                <button class="filter-btn active" data-filter="all">All</button>
+                <button class="filter-btn" data-filter="web">Web Development</button>
+                <button class="filter-btn" data-filter="mobile">Mobile Development</button>
+                <button class="filter-btn" data-filter="data">Data Science</button>
+            </div>
+            <div id="course-container" class="course-grid">
+                <!-- Course Will be loaded dynamically -->
+            </div>
+        </div>
+    </section>
+
+    <section class="features">
+        <div class="container">
+            <div class="feature-grid">
+                <div class="feature-card animate-on-scroll">
+                    <i class="fas fa-video"></i>
+                    <h3>HD Video Lessons</h3>
+                    <p>High-quality video content for better learning</p>
+                </div>
+                <div class="feature-card animate-on-scroll delay-1">
+                    <i class="fas fa-clock"></i>
+                    <h3>Lifetime Access</h3>
+                    <p>Learn at your own pace, anytime anywhere</p>
+                </div>
+                <div class="feature-card animate-on-scroll delay-2">
+                    <i class="fas fa-certificate"></i>
+                    <h3>Certificate</h3>
+                    <p>Get certificate upon courses completion</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h4>EduLearn</h4>
+                    <p>Empowering learn worldwide with quality education</p>
+                </div>
+                <div class="footer-section">
+                    <h4>Quick Links</h4>
+                    <ul class="nav-links">
+                        <li><a href="#home">Home</a></li>
+                        <li><a href="#courses">Courses</a></li>
+                        <li><a href="#about">About</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </footer>
 </body>
+
 </html>
