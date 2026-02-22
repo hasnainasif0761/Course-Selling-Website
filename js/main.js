@@ -77,7 +77,7 @@ function displayCourses(courseToShow){
               <span class="course-price">$${course.price}</span>
               <span class="course-category">${course.category}</span>
               </div>
-              <a href="course-details.html?id=${course.id}" class="btn btn-details">View Course</a>
+              <a href="course-detail.html?id=${course.id}" class="btn btn-details">View Course</a>
             </div>
             </div>
         `).join('');
