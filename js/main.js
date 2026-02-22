@@ -25,9 +25,9 @@ function loadCourses() {
                 category: 'Web Development',
                 image: 'https://images.unsplash.com/photo-1504384308090-c894fdcc538d?auto=format&fit=crop&w=800&q=80',
                 chapters: [
-                    { title: 'HTML Basics', video: 'https://www.youtube.com/embed/U81030fr-EE' },
-                    { title: 'CSS Fundamentals', video: 'https://www.youtube.com/embed/1Rs2ND1ryYc' },
-                ]
+                    { title: 'HTML Basics', video: 'https://www.youtube.com/embed/dQw4w9WgXcQ' },
+                    { title: 'CSS Fundamentals', video: 'https://www.youtube.com/embed/3JluqTojuME' },
+                    ]
             },
             {
                 id: 2,
@@ -49,7 +49,7 @@ function loadCourses() {
                 category: 'Marketing',
                 image: 'https://images.unsplash.com/photo-1491895200222-0fc4a4c35e18?auto=format&fit=crop&w=800&q=80',
                 chapters: [
-                    { title: 'SEO Basics', video: 'https://www.youtube.com/embed/1sYj3nZyQHk' },
+                    { title: 'SEO Basics', video: './video/vi1.mp4' },
                     { title: 'Social Media Marketing', video: 'https://www.youtube.com/embed/5QXqjvY1Z6s' },
                 ]
             }

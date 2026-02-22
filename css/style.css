@@ -689,11 +689,13 @@ body {
     max-height: 0;
     overflow: hidden;
     transition: all 0.3s ease;
+    display: none;
 }
-.chapter-content .active
+.chapter-content.active
 {
     padding: 1rem ;
     max-height: 500px;
+    display: block;
 }
 .video-container
 {
