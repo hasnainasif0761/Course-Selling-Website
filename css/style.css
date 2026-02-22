@@ -128,7 +128,6 @@ body {
     width: 100%;
     border-radius: 10px;
     box-shadow: 0px 20px 40px rgba(0, 0, 0, 0.3);
-    animation: slideInRight 1s ease;
 }
 .btn
 {
@@ -217,6 +216,10 @@ body {
     box-shadow: 0px 10px 30px rgba(0, 0, 0, 0.1);
     transition: all 0.3s ease;
     animation: fadeUp 0.6s ease;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
 }
 .course-card:hover
 {   
@@ -242,6 +245,9 @@ body {
 .course-info
 {
     padding: 1.5rem;
+    flex: 1;
+    display: flex;
+    flex-direction: column;
 }
 .course-info h3
 {
@@ -274,12 +280,13 @@ body {
     border-radius: 20px;
     font-style: 0.9rem;
 }
-.btn .btn-details
+.btn.btn-details
 {
     background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
     color: white;
     width: 100%;
     text-align: center;
+    margin-top: auto;
 }
 .features
 {
@@ -714,7 +721,7 @@ body {
     }
 }
 
-@media slideInRight {
+@keyframes slideInRight {
     from{
         opacity: 0;
         transform: translateX(100px);
